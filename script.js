@@ -24,21 +24,11 @@ function dragEnd() {
 
 all_status.forEach((status) => {
   status.addEventListener("dragover", dragOver);
-  status.addEventListener("dragenter", dragEnter);
-  status.addEventListener("dragleave", dragLeave);
   status.addEventListener("drop", dragDrop);
 });
 
 function dragOver(e) {
   e.preventDefault();
-}
-
-function dragEnter() {
-  this.style.border = "1px dashed #ccc";
-}
-
-function dragLeave() {
-  this.style.border = "none";
 }
 
 function dragDrop() {

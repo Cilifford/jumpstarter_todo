@@ -87,7 +87,7 @@
         }
 
         .status{
-            background-color: rgb(194, 220, 237);
+            background-color: white;
             width: 100rem;
         }
 
@@ -113,7 +113,7 @@
             background: white; 
             position: relative;
             display: flex; 
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
             border: 1px black solid;
             border-radius: 5px;
@@ -153,18 +153,24 @@
                 <h2>Inactivate</h2>
                 <button id="add_task" data-target-modal="#todo_form">+  Add Task</button>
                 <div class="todo" draggable="true">
-                    Coding
+                    Write some code
                     <span class="close_task">&times;</span>
                 </div>
             </div>
+
+            <hr \>
     
             <div class="status">
                 <h2>Not started</h2>
             </div>
+
+            <hr \>
     
             <div class="status">
                 <h2>In Progress</h2>
             </div>
+
+            <hr \>
     
             <div class="status" >
                 <h2>Completed</h2>
